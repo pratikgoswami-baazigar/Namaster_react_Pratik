@@ -5,7 +5,7 @@
  const Title = () =>(
     <a href="/">
     <img
-    className="logo"
+    className="h-28 p-2"
     alt="logo"  // if for some reason image is not displayed, then logo word will show .
     src = "https://lh3.googleusercontent.com/p/AF1QipMf9w4RomHXrUkQKvrxtPdjp3SLadP05HDzXlH2=w1080-h608-p-no-v0"
      />
@@ -18,22 +18,22 @@
 
 
         return ( 
-        <div className="header">
+        <div className="flex justify-between bg-blue-50 shadow-lg">
         <Title/>
         <div className="nav-items">
-            <ul>
+            <ul className="flex py-10">
             <Link to="/">
-            <li>Home</li>
+            <li className="px-2">Home</li>
             </Link>
             <Link to="/about">
-            <li>About</li>
+            <li className="px-2">About</li>
             </Link>
             <Link to="/contact">
-            <li>Contact</li>
+            <li className="px-2">Contact</li>
             </Link>
-            <li>Cart</li>
+            <li className="px-2">Cart</li>
             <Link to="/instamart">
-            <li>Instamart</li>
+            <li className="px-2">Instamart</li>
             </Link>
             </ul>
         </div>
