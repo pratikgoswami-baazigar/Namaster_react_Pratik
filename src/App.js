@@ -9,7 +9,7 @@ import Error from "./components/Error";
 import Contact from "./components/Contact";
 import RestaurantMenu from "./components/RestaurantMenu";
 import Profile from "./components/Profile";
-import Shimmer from "./components/shimmer";
+// import Shimmer from "./components/Shimmer";
 // import RestaurantMenu from "./components/RestaurantMenu";
  /**
      * Header
@@ -51,7 +51,7 @@ const appBrowserRouter = createBrowserRouter(
       children: [
         {
           path: "/",
-          element: <Body/>
+          element: <Body user = {{name: "pratik", id:1}}/>
         },
         {
           path: "/about",
@@ -73,7 +73,7 @@ const appBrowserRouter = createBrowserRouter(
         },
         {
           path: "/instamart",
-          element: <Suspense fallback = {<Shimmer/>} >
+          element: <Suspense fallback = {null} >
             <Instamart/>
           </Suspense>
         }
